@@ -1,0 +1,404 @@
+Winamax Poker - Tournament "Super Freeroll Stade 2" buyIn: Ticket only level: 0 - HandId: #236883548206792705-1-1377708812 - Holdem no limit (10/20) - 2013/08/28 16:53:32 UTC
+Table: 'Super Freeroll Stade 2(55153749)#0' 6-max (real money) Seat #6 is the button
+Seat 1: Mikrethor (1500)
+Seat 2: Boubinho25 (1500)
+Seat 3: jibecmoa84 (1500)
+Seat 4: SMOUZE (1500)
+Seat 5: phillippo (1500)
+Seat 6: pachou83 (1500)
+*** ANTE/BLINDS ***
+Mikrethor posts small blind 10
+Boubinho25 posts big blind 20
+Dealt to Mikrethor [Td 5d]
+*** PRE-FLOP *** 
+jibecmoa84 calls 20
+SMOUZE folds
+phillippo raises 40 to 60
+pachou83 folds
+Mikrethor folds
+Boubinho25 calls 40
+jibecmoa84 calls 40
+*** FLOP *** [9s 4d Tc]
+Boubinho25 checks
+jibecmoa84 checks
+phillippo bets 190
+Boubinho25 calls 190
+jibecmoa84 folds
+*** TURN *** [9s 4d Tc][2d]
+Boubinho25 checks
+phillippo bets 570
+Boubinho25 folds
+phillippo collected 1140 from pot
+*** SUMMARY ***
+Total pot 1140 | No rake
+Board: [9s 4d Tc 2d]
+Seat 5: phillippo won 1140
+
+
+Winamax Poker - Tournament "Super Freeroll Stade 2" buyIn: Ticket only level: 0 - HandId: #236883548206792705-2-1377708866 - Holdem no limit (10/20) - 2013/08/28 16:54:26 UTC
+Table: 'Super Freeroll Stade 2(55153749)#0' 6-max (real money) Seat #1 is the button
+Seat 1: Mikrethor (1490)
+Seat 2: Boubinho25 (1250)
+Seat 3: jibecmoa84 (1440)
+Seat 4: SMOUZE (1500)
+Seat 5: phillippo (1820)
+Seat 6: pachou83 (1500)
+*** ANTE/BLINDS ***
+Boubinho25 posts small blind 10
+jibecmoa84 posts big blind 20
+Dealt to Mikrethor [9d Ah]
+*** PRE-FLOP *** 
+SMOUZE folds
+phillippo raises 60 to 80
+pachou83 calls 80
+Mikrethor folds
+Boubinho25 folds
+jibecmoa84 calls 60
+*** FLOP *** [Ac 2d Qh]
+jibecmoa84 checks
+phillippo checks
+pachou83 checks
+*** TURN *** [Ac 2d Qh][Jc]
+jibecmoa84 checks
+phillippo checks
+pachou83 checks
+*** RIVER *** [Ac 2d Qh Jc][Qs]
+jibecmoa84 bets 125
+phillippo folds
+pachou83 folds
+jibecmoa84 collected 375 from pot
+*** SUMMARY ***
+Total pot 375 | No rake
+Board: [Ac 2d Qh Jc Qs]
+Seat 3: jibecmoa84 (big blind) won 375
+
+
+Winamax Poker - Tournament "Super Freeroll Stade 2" buyIn: Ticket only level: 0 - HandId: #236883548206792705-3-1377708978 - Holdem no limit (10/20) - 2013/08/28 16:56:18 UTC
+Table: 'Super Freeroll Stade 2(55153749)#0' 6-max (real money) Seat #2 is the button
+Seat 1: Mikrethor (1490)
+Seat 2: Boubinho25 (1240)
+Seat 3: jibecmoa84 (1610)
+Seat 4: SMOUZE (1500)
+Seat 5: phillippo (1740)
+Seat 6: pachou83 (1420)
+*** ANTE/BLINDS ***
+jibecmoa84 posts small blind 10
+SMOUZE posts big blind 20
+Dealt to Mikrethor [5s 7c]
+*** PRE-FLOP *** 
+phillippo folds
+pachou83 raises 80 to 100
+Mikrethor folds
+Boubinho25 folds
+jibecmoa84 folds
+SMOUZE calls 80
+*** FLOP *** [As 2s 5h]
+SMOUZE checks
+pachou83 bets 210
+SMOUZE calls 210
+*** TURN *** [As 2s 5h][Jc]
+SMOUZE checks
+pachou83 bets 472
+SMOUZE folds
+pachou83 collected 1102 from pot
+*** SUMMARY ***
+Total pot 1102 | No rake
+Board: [As 2s 5h Jc]
+Seat 6: pachou83 won 1102
+
+
+Winamax Poker - Tournament "Super Freeroll Stade 2" buyIn: Ticket only level: 1 - HandId: #236883548206792705-4-1377709040 - Holdem no limit (15/30) - 2013/08/28 16:57:20 UTC
+Table: 'Super Freeroll Stade 2(55153749)#0' 6-max (real money) Seat #3 is the button
+Seat 1: Mikrethor (1490)
+Seat 2: Boubinho25 (1240)
+Seat 3: jibecmoa84 (1600)
+Seat 4: SMOUZE (1190)
+Seat 5: phillippo (1740)
+Seat 6: pachou83 (1740)
+*** ANTE/BLINDS ***
+SMOUZE posts small blind 15
+phillippo posts big blind 30
+Dealt to Mikrethor [Ks 2s]
+*** PRE-FLOP *** 
+pachou83 calls 30
+Mikrethor raises 60 to 90
+Boubinho25 calls 90
+jibecmoa84 calls 90
+SMOUZE raises 270 to 360
+phillippo folds
+pachou83 folds
+Mikrethor folds
+Boubinho25 folds
+jibecmoa84 raises 1240 to 1600 and is all-in
+SMOUZE calls 830 and is all-in
+*** FLOP *** [9s 8s Ts]
+*** TURN *** [9s 8s Ts][7h]
+*** RIVER *** [9s 8s Ts 7h][Ad]
+*** SHOW DOWN ***
+SMOUZE shows [Ah Kh] (One pair : Aces)
+jibecmoa84 shows [Jc As] (Straight Jack high)
+jibecmoa84 collected 3030 from pot
+*** SUMMARY ***
+Total pot 3030 | No rake
+Board: [9s 8s Ts 7h Ad]
+Seat 3: jibecmoa84 (button) showed [Jc As] and won 3030 with Straight Jack high
+Seat 4: SMOUZE (small blind) showed [Ah Kh] and lost with One pair : Aces
+
+
+Winamax Poker - Tournament "Super Freeroll Stade 2" buyIn: Ticket only level: 1 - HandId: #236883548206792705-5-1377709102 - Holdem no limit (15/30) - 2013/08/28 16:58:22 UTC
+Table: 'Super Freeroll Stade 2(55153749)#0' 6-max (real money) Seat #4 is the button
+Seat 1: Mikrethor (1400)
+Seat 2: Boubinho25 (1150)
+Seat 3: jibecmoa84 (3030)
+Seat 5: phillippo (1710)
+Seat 6: pachou83 (1710)
+*** ANTE/BLINDS ***
+phillippo posts small blind 15
+pachou83 posts big blind 30
+Dealt to Mikrethor [5d 7c]
+*** PRE-FLOP *** 
+Mikrethor folds
+Boubinho25 folds
+jibecmoa84 calls 30
+phillippo calls 15
+pachou83 checks
+*** FLOP *** [5c 4s 6c]
+phillippo checks
+pachou83 checks
+jibecmoa84 checks
+*** TURN *** [5c 4s 6c][7d]
+phillippo checks
+pachou83 checks
+jibecmoa84 checks
+*** RIVER *** [5c 4s 6c 7d][Ac]
+phillippo checks
+pachou83 checks
+jibecmoa84 bets 30
+phillippo calls 30
+pachou83 folds
+*** SHOW DOWN ***
+phillippo shows [Jc 7s] (One pair : 7)
+jibecmoa84 shows [3s 3c] (Straight 7 high)
+jibecmoa84 collected 150 from pot
+*** SUMMARY ***
+Total pot 150 | No rake
+Board: [5c 4s 6c 7d Ac]
+Seat 3: jibecmoa84 showed [3s 3c] and won 150 with Straight 7 high
+Seat 5: phillippo (small blind) showed [Jc 7s] and lost with One pair : 7
+
+
+Winamax Poker - Tournament "Super Freeroll Stade 2" buyIn: Ticket only level: 1 - HandId: #236883548206792705-6-1377709149 - Holdem no limit (15/30) - 2013/08/28 16:59:09 UTC
+Table: 'Super Freeroll Stade 2(55153749)#0' 6-max (real money) Seat #5 is the button
+Seat 1: Mikrethor (1400)
+Seat 2: Boubinho25 (1150)
+Seat 3: jibecmoa84 (3120)
+Seat 5: phillippo (1650)
+Seat 6: pachou83 (1680)
+*** ANTE/BLINDS ***
+pachou83 posts small blind 15
+Mikrethor posts big blind 30
+Dealt to Mikrethor [Ks Qh]
+*** PRE-FLOP *** 
+Boubinho25 folds
+jibecmoa84 folds
+phillippo calls 30
+pachou83 calls 15
+Mikrethor raises 60 to 90
+phillippo calls 60
+pachou83 folds
+*** FLOP *** [5d Th 4d]
+Mikrethor bets 140
+phillippo folds
+Mikrethor collected 350 from pot
+*** SUMMARY ***
+Total pot 350 | No rake
+Board: [5d Th 4d]
+Seat 1: Mikrethor (big blind) won 350
+
+
+Winamax Poker - Tournament "Super Freeroll Stade 2" buyIn: Ticket only level: 2 - HandId: #236883548206792705-7-1377709180 - Holdem no limit (20/40) - 2013/08/28 16:59:40 UTC
+Table: 'Super Freeroll Stade 2(55153749)#0' 6-max (real money) Seat #6 is the button
+Seat 1: Mikrethor (1520)
+Seat 2: Boubinho25 (1150)
+Seat 3: jibecmoa84 (3120)
+Seat 5: phillippo (1560)
+Seat 6: pachou83 (1650)
+*** ANTE/BLINDS ***
+Mikrethor posts small blind 20
+Boubinho25 posts big blind 40
+Dealt to Mikrethor [9d Ts]
+*** PRE-FLOP *** 
+jibecmoa84 folds
+phillippo folds
+pachou83 folds
+Mikrethor raises 40 to 80
+Boubinho25 raises 160 to 240
+Mikrethor calls 160
+*** FLOP *** [7c 3h Qs]
+Mikrethor bets 240
+Boubinho25 raises 670 to 910 and is all-in
+Mikrethor folds
+Boubinho25 collected 1630 from pot
+*** SUMMARY ***
+Total pot 1630 | No rake
+Board: [7c 3h Qs]
+Seat 2: Boubinho25 (big blind) won 1630
+
+
+Winamax Poker - Tournament "Super Freeroll Stade 2" buyIn: Ticket only level: 2 - HandId: #236883548206792705-8-1377709229 - Holdem no limit (20/40) - 2013/08/28 17:00:29 UTC
+Table: 'Super Freeroll Stade 2(55153749)#0' 6-max (real money) Seat #1 is the button
+Seat 1: Mikrethor (1040)
+Seat 2: Boubinho25 (1630)
+Seat 3: jibecmoa84 (3120)
+Seat 5: phillippo (1560)
+Seat 6: pachou83 (1650)
+*** ANTE/BLINDS ***
+Boubinho25 posts small blind 20
+jibecmoa84 posts big blind 40
+Dealt to Mikrethor [9h 5d]
+*** PRE-FLOP *** 
+phillippo calls 40
+pachou83 calls 40
+Mikrethor folds
+Boubinho25 calls 20
+jibecmoa84 checks
+*** FLOP *** [Jd Qd 6h]
+Boubinho25 checks
+jibecmoa84 checks
+phillippo checks
+pachou83 checks
+*** TURN *** [Jd Qd 6h][4c]
+Boubinho25 checks
+jibecmoa84 checks
+phillippo checks
+pachou83 checks
+*** RIVER *** [Jd Qd 6h 4c][4h]
+Boubinho25 checks
+jibecmoa84 checks
+phillippo checks
+pachou83 bets 120
+Boubinho25 folds
+jibecmoa84 folds
+phillippo folds
+pachou83 collected 280 from pot
+*** SUMMARY ***
+Total pot 280 | No rake
+Board: [Jd Qd 6h 4c 4h]
+Seat 6: pachou83 won 280
+
+
+Winamax Poker - Tournament "Super Freeroll Stade 2" buyIn: Ticket only level: 2 - HandId: #236883548206792705-9-1377709321 - Holdem no limit (20/40) - 2013/08/28 17:02:01 UTC
+Table: 'Super Freeroll Stade 2(55153749)#0' 6-max (real money) Seat #2 is the button
+Seat 1: Mikrethor (1040)
+Seat 2: Boubinho25 (1590)
+Seat 3: jibecmoa84 (3080)
+Seat 5: phillippo (1520)
+Seat 6: pachou83 (1770)
+*** ANTE/BLINDS ***
+jibecmoa84 posts small blind 20
+phillippo posts big blind 40
+Dealt to Mikrethor [5h 9c]
+*** PRE-FLOP *** 
+pachou83 calls 40
+Mikrethor folds
+Boubinho25 calls 40
+jibecmoa84 calls 20
+phillippo raises 80 to 120
+pachou83 calls 80
+Boubinho25 calls 80
+jibecmoa84 calls 80
+*** FLOP *** [Kc Ts As]
+jibecmoa84 checks
+phillippo bets 480
+pachou83 calls 480
+Boubinho25 folds
+jibecmoa84 folds
+*** TURN *** [Kc Ts As][Ad]
+phillippo bets 920 and is all-in
+pachou83 calls 920
+*** RIVER *** [Kc Ts As Ad][7d]
+*** SHOW DOWN ***
+phillippo shows [Qc Js] (Straight Ace high)
+pachou83 shows [Jh Qs] (Straight Ace high)
+pachou83 collected 1640 from pot
+phillippo collected 1640 from pot
+*** SUMMARY ***
+Total pot 3280 | No rake
+Board: [Kc Ts As Ad 7d]
+Seat 5: phillippo (big blind) showed [Qc Js] and won 1640 with Straight Ace high
+Seat 6: pachou83 showed [Jh Qs] and won 1640 with Straight Ace high
+
+
+Winamax Poker - Tournament "Super Freeroll Stade 2" buyIn: Ticket only level: 3 - HandId: #236883548206792705-10-1377709384 - Holdem no limit (30/60) - 2013/08/28 17:03:04 UTC
+Table: 'Super Freeroll Stade 2(55153749)#0' 6-max (real money) Seat #3 is the button
+Seat 1: Mikrethor (1040)
+Seat 2: Boubinho25 (1470)
+Seat 3: jibecmoa84 (2960)
+Seat 5: phillippo (1640)
+Seat 6: pachou83 (1890)
+*** ANTE/BLINDS ***
+phillippo posts small blind 30
+pachou83 posts big blind 60
+Dealt to Mikrethor [8c 2d]
+*** PRE-FLOP *** 
+Mikrethor folds
+Boubinho25 folds
+jibecmoa84 calls 60
+phillippo calls 30
+pachou83 checks
+*** FLOP *** [Js 2s Ks]
+phillippo checks
+pachou83 bets 180
+jibecmoa84 folds
+phillippo calls 180
+*** TURN *** [Js 2s Ks][5d]
+phillippo checks
+pachou83 bets 540
+phillippo calls 540
+*** RIVER *** [Js 2s Ks 5d][5s]
+phillippo bets 860 and is all-in
+pachou83 folds
+phillippo collected 2480 from pot
+*** SUMMARY ***
+Total pot 2480 | No rake
+Board: [Js 2s Ks 5d 5s]
+Seat 5: phillippo (small blind) won 2480
+
+
+Winamax Poker - Tournament "Super Freeroll Stade 2" buyIn: Ticket only level: 3 - HandId: #236883548206792705-11-1377709450 - Holdem no limit (30/60) - 2013/08/28 17:04:10 UTC
+Table: 'Super Freeroll Stade 2(55153749)#0' 6-max (real money) Seat #5 is the button
+Seat 1: Mikrethor (1040)
+Seat 2: Boubinho25 (1470)
+Seat 3: jibecmoa84 (2900)
+Seat 5: phillippo (2480)
+Seat 6: pachou83 (1110)
+*** ANTE/BLINDS ***
+pachou83 posts small blind 30
+Mikrethor posts big blind 60
+Dealt to Mikrethor [Kc 3s]
+*** PRE-FLOP *** 
+Boubinho25 folds
+jibecmoa84 folds
+phillippo calls 60
+pachou83 calls 30
+Mikrethor checks
+*** FLOP *** [9h 4h Ks]
+pachou83 bets 60
+Mikrethor raises 180 to 240
+phillippo calls 240
+pachou83 folds
+*** TURN *** [9h 4h Ks][Ah]
+Mikrethor bets 740 and is all-in
+phillippo calls 740
+*** RIVER *** [9h 4h Ks Ah][Ad]
+*** SHOW DOWN ***
+Mikrethor shows [Kc 3s] (Two pairs : Aces and Kings)
+phillippo shows [7h 6h] (Flush Ace high)
+phillippo collected 2200 from pot
+*** SUMMARY ***
+Total pot 2200 | No rake
+Board: [9h 4h Ks Ah Ad]
+Seat 1: Mikrethor (big blind) showed [Kc 3s] and lost with Two pairs : Aces and Kings
+Seat 5: phillippo (button) showed [7h 6h] and won 2200 with Flush Ace high
+
+

@@ -157,10 +157,10 @@ class WinamaxParser(override val cardroom: Cardroom, override val filePath: Stri
         return blinds.substring(startPosition, endPosition).toDouble()
     }
 
-    override fun parseButtonSeat(line: String): Int? {
+    override fun parseButtonSeat(line: String): Int {
         val startPosition = line.lastIndexOf(HASHTAG) + 1
         val endPosition = line.indexOf(IS_THE_BUTTON) - 1
-        return Integer.parseInt(line.substring(startPosition, endPosition))
+        return line.substring(startPosition, endPosition).toInt()
     }
 
     override fun parseBuyIn(line: String): Double {
@@ -490,7 +490,7 @@ class WinamaxParser(override val cardroom: Cardroom, override val filePath: Stri
     override fun parseTableLine(currentLine: String, iterator: Iterator<String>, phase: String, nextPhases: Array<String>, hand: Hand): String {
         hand.numberOfPlayerByTable = parseNumberOfPlayerByTable(currentLine)
         var buttonSeat = parseButtonSeat(currentLine)
-        var tableId = parseTableId(currentLine)
+        hand.cardroomTableId = parseTableId(currentLine)
 
         return iterator.next()
     }

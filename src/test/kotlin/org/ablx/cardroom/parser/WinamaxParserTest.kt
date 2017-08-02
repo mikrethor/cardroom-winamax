@@ -234,13 +234,14 @@ class WinamaxParserTest {
     @Test
     fun testParse() {
         val parser: Parser = createParser()
-        parser.parse()
+        val hands = parser.parse()
+        assertEquals(11, hands.values.size)
     }
 
     @Test
     fun testIsAction() {
         val cardroom = Cardroom(1, Operator.WINAMAX, Domain.FR, "")
-        val parser= WinamaxParser(cardroom,"")
+        val parser = WinamaxParser(cardroom, "")
         assertTrue(parser.isAction("calls"))
         assertTrue(parser.isAction("folds"))
         assertTrue(parser.isAction("raises"))
@@ -250,9 +251,51 @@ class WinamaxParserTest {
         assertTrue(parser.isAction("shows"))
 
         assertFalse(parser.isAction("false"))
+    }
 
 
+    @Test
+    fun testTextToHand() {
+        val parser: Parser = createParser()
+        val handText = "Winamax Poker - Tournament \"Super Freeroll Stade 2\" buyIn: Ticket only level: 0 - HandId: #236883548206792705-1-1377708812 - Holdem no limit (10/20) - 2013/08/28 16:53:32 UTC\n" +
+                "Table: 'Super Freeroll Stade 2(55153749)#0' 6-max (real money) Seat #6 is the button\n" +
+                "Seat 1: Mikrethor (1500)\n" +
+                "Seat 2: Boubinho25 (1500)\n" +
+                "Seat 3: jibecmoa84 (1500)\n" +
+                "Seat 4: SMOUZE (1500)\n" +
+                "Seat 5: phillippo (1500)\n" +
+                "Seat 6: pachou83 (1500)\n" +
+                "*** ANTE/BLINDS ***\n" +
+                "Mikrethor posts small blind 10\n" +
+                "Boubinho25 posts big blind 20\n" +
+                "Dealt to Mikrethor [Td 5d]\n" +
+                "*** PRE-FLOP *** \n" +
+                "jibecmoa84 calls 20\n" +
+                "SMOUZE folds\n" +
+                "phillippo raises 40 to 60\n" +
+                "pachou83 folds\n" +
+                "Mikrethor folds\n" +
+                "Boubinho25 calls 40\n" +
+                "jibecmoa84 calls 40\n" +
+                "*** FLOP *** [9s 4d Tc]\n" +
+                "Boubinho25 checks\n" +
+                "jibecmoa84 checks\n" +
+                "phillippo bets 190\n" +
+                "Boubinho25 calls 190\n" +
+                "jibecmoa84 folds\n" +
+                "*** TURN *** [9s 4d Tc][2d]\n" +
+                "Boubinho25 checks\n" +
+                "phillippo bets 570\n" +
+                "Boubinho25 folds\n" +
+                "phillippo collected 1140 from pot\n" +
+                "*** SUMMARY ***\n" +
+                "Total pot 1140 | No rake\n" +
+                "Board: [9s 4d Tc 2d]\n" +
+                "Seat 5: phillippo won 1140"
+        val hand = parser.textToHand(handText)
 
+        assertEquals("236883548206792705-1", hand.cardroomHandId)
+        assertEquals("Mikrethor", hand.accountPlayer!!.name)
     }
 
 }

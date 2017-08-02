@@ -49,8 +49,20 @@ class WinamaxParser(override val cardroom: Cardroom, override val filePath: Stri
     protected val MAX = "max"
 
 
-    override fun fileToMap(): Map<String, StringBuffer> {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    override fun fileToMap(): Map<String, String> {
+
+        var map = HashMap<String, String>()
+        val parts = readHandFile().split(NEW_HAND)
+
+        var index = 0
+        for (s in parts) {
+            index++
+            if (s != "") {
+                map.put(parseHandId(s), NEW_HAND + s)
+            }
+        }
+
+        return map
     }
 
 
@@ -71,73 +83,16 @@ class WinamaxParser(override val cardroom: Cardroom, override val filePath: Stri
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 
-    override fun nextLine(scanner: Scanner): String {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
 
     override fun parse(): MutableMap<String, Hand> {
-        val content = readHandFile()
-        val map: MutableMap<String, Hand> = HashMap()
-        var hand: Hand = Hand("")
-        var currentLine = ""
-        var firstIteration = true
-        content.reader().useLines {
-            val iter = it.iterator()
-            while (iter.hasNext()) {
+        val mapHands: MutableMap<String, Hand> = HashMap()
+        val mapFilePart: Map<String, String> = fileToMap()
 
-                if (firstIteration) {
-                    currentLine = iter.next()
-                    firstIteration = false
-                }
+        for (key in mapFilePart.keys) {
 
-
-                //Check each New Hand Line
-                if (currentLine.startsWith(NEW_HAND)) {
-
-                    hand = Hand(parseHandId(currentLine))
-                    currentLine = parseNewHandLine(currentLine, NEW_HAND, arrayOf(EMPTY), hand)
-                    currentLine = iter.next()
-
-                }
-
-                if (currentLine.startsWith(TABLE)) {
-                    hand.numberOfPlayerByTable = parseNumberOfPlayerByTable(currentLine)
-                    var buttonSeat = parseButtonSeat(currentLine)
-                    var tableId = parseTableId(currentLine)
-
-                    currentLine = iter.next()
-                }
-
-
-
-                currentLine = parseSeatLine(currentLine, iter, SEAT,
-                        arrayOf(ANTE_BLIND), hand)
-
-                currentLine = parseAntesAndBlinds(currentLine, iter, ANTE_BLIND,
-                        arrayOf(PRE_FLOP, SUMMARY), hand)
-
-
-                currentLine = readPreflop(currentLine, iter, hand)
-
-                currentLine = readFlop(currentLine, iter, hand)
-
-                currentLine = readTurn(currentLine, iter, hand)
-
-                currentLine = readRiver(currentLine, iter, hand)
-
-                currentLine = readShowdown(currentLine, iter, hand)
-
-                currentLine = readSummary(currentLine, iter, SUMMARY,
-                        arrayOf(NEW_HAND), hand)
-
-                map.put(hand.cardroomHandId, hand)
-            }
-
-
+            mapHands.put(key, textToHand(mapFilePart[key]!!))
         }
-
-        return map
-
+        return mapHands
     }
 
 
@@ -290,12 +245,12 @@ class WinamaxParser(override val cardroom: Cardroom, override val filePath: Stri
 
     override fun parsePlayerSeat(line: String): Player {
         val space = line.indexOf(SPACE)
-        val deuxpoints = line.indexOf(COLON)
+        val colon = line.indexOf(COLON)
         val LEFT_PARENTHESIS = line.indexOf(LEFT_PARENTHESIS)
         val RIGHT_PARENTHESIS = line.indexOf(RIGHT_PARENTHESIS)
 
-        val seat = line.substring(space + 1, deuxpoints)
-        val playerName = line.substring(deuxpoints + 2,
+        val seat = line.substring(space + 1, colon)
+        val playerName = line.substring(colon + 2,
                 LEFT_PARENTHESIS - 1)
         var stack = line.substring(LEFT_PARENTHESIS + 1, RIGHT_PARENTHESIS)
         stack = stack.replace(money.symbol, EMPTY)
@@ -326,7 +281,6 @@ class WinamaxParser(override val cardroom: Cardroom, override val filePath: Stri
             endPosition = blinds.indexOf(SLASH)
         }
 
-
         return blinds.substring(startPosition, endPosition).toDouble()
 
     }
@@ -348,16 +302,10 @@ class WinamaxParser(override val cardroom: Cardroom, override val filePath: Stri
         return java.lang.Double.parseDouble(currentLine)
     }
 
-    override fun parsing(): Map<String, Hand> {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
-
-
     override fun readHandFile(): String {
         val encoded: ByteArray = Files.readAllBytes(Paths.get(filePath))
         return String(encoded, Charsets.UTF_8)
     }
-
 
     override fun readAction(line: String, players: Map<String, Player>): HandAction {
         val tab = line.split(SPACE.toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray()
@@ -398,8 +346,58 @@ class WinamaxParser(override val cardroom: Cardroom, override val filePath: Stri
     }
 
 
-    override fun textToHand(text: StringBuffer): Hand {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    override fun textToHand(text: String): Hand {
+        var currentLine: String = ""
+        var firstIteration = true
+        val iter = text.lines().asIterable().iterator()
+        var hand = Hand("1")
+
+
+        while (iter.hasNext()) {
+
+            if (firstIteration) {
+                currentLine = iter.next()
+                firstIteration = false
+            }
+
+            //Check each New Hand Line
+            if (currentLine.startsWith(NEW_HAND)) {
+
+                hand = Hand(parseHandId(currentLine))
+                currentLine = parseNewHandLine(currentLine, NEW_HAND, arrayOf(EMPTY), hand)
+                currentLine = iter.next()
+            }
+
+            if (currentLine.startsWith(TABLE)) {
+                hand.numberOfPlayerByTable = parseNumberOfPlayerByTable(currentLine)
+                var buttonSeat = parseButtonSeat(currentLine)
+                var tableId = parseTableId(currentLine)
+
+                currentLine = iter.next()
+            }
+
+            currentLine = parseSeatLine(currentLine, iter, SEAT,
+                    arrayOf(ANTE_BLIND), hand)
+
+            currentLine = parseAntesAndBlinds(currentLine, iter, ANTE_BLIND,
+                    arrayOf(PRE_FLOP, SUMMARY), hand)
+
+            currentLine = readPreflop(currentLine, iter, hand)
+
+            currentLine = readFlop(currentLine, iter, hand)
+
+            currentLine = readTurn(currentLine, iter, hand)
+
+            currentLine = readRiver(currentLine, iter, hand)
+
+            currentLine = readShowdown(currentLine, iter, hand)
+
+            currentLine = readSummary(currentLine, iter, SUMMARY,
+                    arrayOf(NEW_HAND), hand)
+
+
+        }
+        return hand
     }
 
 
@@ -556,26 +554,26 @@ class WinamaxParser(override val cardroom: Cardroom, override val filePath: Stri
 
     override fun readSummary(currentLine: String, iterator: Iterator<String>, phase: String, nextPhases: Array<String>,
                              hand: Hand): String {
-        var nextL = currentLine
-        if (nextL.startsWith(phase)) {
+        var curLine = currentLine
+        if (curLine.startsWith(phase)) {
 
             while (iterator.hasNext()) {
                 // Total pot 180 | No rake
-                if (nextL.startsWith(TOTAL_POT)) {
-                    val rake = parseRake(nextL)
-                    hand.totalPot = parseTotalPot(nextL)
+                if (curLine.startsWith(TOTAL_POT)) {
+                    val rake = parseRake(curLine)
+                    hand.totalPot = parseTotalPot(curLine)
                     hand.rake = rake
                 }
-                if (nextL.startsWith(BOARD)) {
-                    this.readCards(nextL)
+                if (curLine.startsWith(BOARD)) {
+                    this.readCards(curLine)
                 }
-                if (nextL.startsWith(SEAT) && nextL.contains(CLOSING_SQUARE_BRACKET)) {
-                    this.readCards(nextL)
+                if (curLine.startsWith(SEAT) && curLine.contains(CLOSING_SQUARE_BRACKET)) {
+                    this.readCards(curLine)
                 }
-                if (startsWith(nextL, nextPhases)) {
+                if (startsWith(curLine, nextPhases)) {
                     break
                 } else {
-                    nextL = iterator.next()
+                    curLine = iterator.next()
                 }
             }
 
@@ -588,7 +586,7 @@ class WinamaxParser(override val cardroom: Cardroom, override val filePath: Stri
 
 
         }
-        return nextL
+        return curLine
     }
 
     override fun readTurn(currentLine: String, iterator: Iterator<String>, hand: Hand): String {

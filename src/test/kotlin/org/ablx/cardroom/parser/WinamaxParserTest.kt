@@ -2,16 +2,15 @@ package org.ablx.cardroom.parser
 
 import org.ablx.cardroom.commons.data.Cardroom
 import org.ablx.cardroom.commons.data.Player
-import org.ablx.cardroom.commons.enumeration.Action
+import org.ablx.cardroom.commons.enumeration.*
 import org.ablx.cardroom.commons.enumeration.Currency
-import org.ablx.cardroom.commons.enumeration.Domain
-import org.ablx.cardroom.commons.enumeration.Operator
 import org.junit.Test
 import java.io.File
 import java.util.*
 import kotlin.test.assertEquals
 import kotlin.test.assertFalse
 import kotlin.test.assertTrue
+import kotlin.test.asserter
 
 
 class WinamaxParserTest {
@@ -297,5 +296,14 @@ class WinamaxParserTest {
         assertEquals("236883548206792705-1", hand.cardroomHandId)
         assertEquals("Mikrethor", hand.accountPlayer!!.name)
     }
+
+    @Test
+    fun testGameTypeFromFilename() {
+        val parser: Parser = createParser()
+        assertEquals(GameType.TOURNAMENT, parser.getGameTypeFromFilename("20130828_Super Freeroll Stade 2(55153749)_real_holdem_no-limit.txt"))
+
+        assertEquals(GameType.CASH, parser.getGameTypeFromFilename("20131217_Tokyo 02_real_holdem_no-limit.txt"))
+    }
+
 
 }

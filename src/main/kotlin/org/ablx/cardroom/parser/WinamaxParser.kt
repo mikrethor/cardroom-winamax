@@ -67,13 +67,13 @@ class WinamaxParser(override val cardroom: Cardroom, override val filePath: Stri
 
 
     override fun getGameTypeFromFilename(fileName: String): GameType {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        if (fileName.contains(LEFT_PARENTHESIS) && fileName.contains(RIGHT_PARENTHESIS)) {
+            return GameType.TOURNAMENT
+        } else {
+            return GameType.CASH
+        }
     }
 
-
-    override fun getTournamentId(): String {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
 
     override fun isHandFile(filePath: String): Boolean {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
@@ -468,7 +468,7 @@ class WinamaxParser(override val cardroom: Cardroom, override val filePath: Stri
 
 
                 /**
-                 * @TODO mieux gerer le cas ou le button a eteeliminer au tour
+                 * @TODO mieux gerer le cas ou le button a ete eliminer au tour
                  * *       d'avant.
                  */
                 if (hand.buttonSeat.equals(playerInGame.seat)) {

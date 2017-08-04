@@ -1,0 +1,438 @@
+Winamax Poker - CashGame - HandId: #5511456-657-1387318419 - Holdem no limit (0.01€/0.02€) - 2013/12/17 22:13:39 UTC
+Table: 'Tokyo 02' 9-max (real money) Seat #3 is the button
+Seat 1: Fletan67 (0.89€)
+Seat 2: Mikrethor (2€)
+Seat 3: fab3523 (1.99€)
+Seat 4: frappedemule (2€)
+Seat 5: indoaffaire3 (1.05€)
+Seat 6: Warou (2€)
+Seat 7: SCUMPI (2€)
+Seat 8: mamiejoelle (1.99€)
+Seat 9: Bystyc (2.01€)
+*** ANTE/BLINDS ***
+frappedemule posts small blind 0.01€
+indoaffaire3 posts big blind 0.02€
+Mikrethor posts big blind 0.02€ out of position
+Dealt to Mikrethor [7h 4h]
+*** PRE-FLOP ***
+Warou folds
+SCUMPI raises 0.07€ to 0.09€
+mamiejoelle folds
+Bystyc folds
+Fletan67 folds
+Mikrethor folds
+fab3523 folds
+frappedemule calls 0.08€
+indoaffaire3 folds
+*** FLOP *** [Jh Qc Qd]
+frappedemule checks
+SCUMPI bets 0.15€
+frappedemule calls 0.15€
+*** TURN *** [Jh Qc Qd][8h]
+frappedemule checks
+SCUMPI bets 0.26€
+frappedemule calls 0.26€
+*** RIVER *** [Jh Qc Qd 8h][9c]
+frappedemule checks
+SCUMPI checks
+*** SHOW DOWN ***
+frappedemule shows [Jc Ac] (Two pairs : Queens and Jacks)
+SCUMPI shows [Kh Kc] (Two pairs : Kings and Queens)
+SCUMPI collected 0.97€ from pot
+*** SUMMARY ***
+Total pot 0.97€ | Rake 0.07€
+Board: [Jh Qc Qd 8h 9c]
+Seat 4: frappedemule (small blind) showed [Jc Ac] and lost with Two pairs : Queens and Jacks
+Seat 7: SCUMPI showed [Kh Kc] and won 0.97€ with Two pairs : Kings and Queens
+
+
+Winamax Poker - CashGame - HandId: #5511456-658-1387318535 - Holdem no limit (0.01€/0.02€) - 2013/12/17 22:15:35 UTC
+Table: 'Tokyo 02' 9-max (real money) Seat #4 is the button
+Seat 1: Fletan67 (0.89€)
+Seat 2: Mikrethor (1.98€)
+Seat 3: fab3523 (1.99€)
+Seat 4: frappedemule (1.50€)
+Seat 5: indoaffaire3 (1.03€)
+Seat 6: Warou (2€)
+Seat 7: SCUMPI (2.47€)
+Seat 8: mamiejoelle (1.99€)
+Seat 9: Bystyc (2.01€)
+*** ANTE/BLINDS ***
+indoaffaire3 posts small blind 0.01€
+Warou posts big blind 0.02€
+Dealt to Mikrethor [3h Qh]
+*** PRE-FLOP ***
+SCUMPI folds
+mamiejoelle folds
+Bystyc folds
+Fletan67 folds
+Mikrethor folds
+fab3523 raises 0.05€ to 0.07€
+frappedemule calls 0.07€
+indoaffaire3 folds
+Warou calls 0.05€
+*** FLOP *** [2s 2d Kc]
+Warou checks
+fab3523 bets 0.15€
+frappedemule folds
+Warou folds
+fab3523 collected 0.36€ from pot
+*** SUMMARY ***
+Total pot 0.36€ | Rake 0.01€
+Board: [2s 2d Kc]
+Seat 3: fab3523 won 0.36€
+
+
+Winamax Poker - CashGame - HandId: #5511456-659-1387318648 - Holdem no limit (0.01€/0.02€) - 2013/12/17 22:17:28 UTC
+Table: 'Tokyo 02' 9-max (real money) Seat #5 is the button
+Seat 1: Fletan67 (0.89€)
+Seat 2: Mikrethor (1.98€)
+Seat 3: fab3523 (2.13€)
+Seat 4: frappedemule (1.43€)
+Seat 5: indoaffaire3 (1.02€)
+Seat 6: Warou (2€)
+Seat 7: SCUMPI (2.47€)
+Seat 8: mamiejoelle (1.99€)
+Seat 9: Bystyc (2.01€)
+*** ANTE/BLINDS ***
+Warou posts small blind 0.01€
+SCUMPI posts big blind 0.02€
+Dealt to Mikrethor [9c Jc]
+*** PRE-FLOP ***
+mamiejoelle folds
+Bystyc folds
+Fletan67 folds
+Mikrethor folds
+fab3523 raises 0.05€ to 0.07€
+frappedemule folds
+indoaffaire3 folds
+Warou folds
+SCUMPI folds
+fab3523 collected 0.10€ from pot
+*** SUMMARY ***
+Total pot 0.10€ | No rake
+Seat 3: fab3523 won 0.10€
+
+
+Winamax Poker - CashGame - HandId: #5511456-660-1387318708 - Holdem no limit (0.01€/0.02€) - 2013/12/17 22:18:28 UTC
+Table: 'Tokyo 02' 9-max (real money) Seat #6 is the button
+Seat 1: Fletan67 (0.89€)
+Seat 2: Mikrethor (1.98€)
+Seat 3: fab3523 (2.16€)
+Seat 4: frappedemule (1.43€)
+Seat 5: indoaffaire3 (1.02€)
+Seat 6: Warou (1.99€)
+Seat 7: SCUMPI (2.45€)
+Seat 8: mamiejoelle (1.99€)
+Seat 9: Bystyc (2.01€)
+*** ANTE/BLINDS ***
+SCUMPI posts small blind 0.01€
+mamiejoelle posts big blind 0.02€
+Dealt to Mikrethor [Kh Qs]
+*** PRE-FLOP ***
+Bystyc folds
+Fletan67 folds
+Mikrethor folds
+fab3523 folds
+frappedemule calls 0.02€
+indoaffaire3 folds
+Warou folds
+SCUMPI calls 0.01€
+mamiejoelle checks
+*** FLOP *** [6d 3d 6c]
+SCUMPI checks
+mamiejoelle checks
+frappedemule bets 0.06€
+SCUMPI calls 0.06€
+mamiejoelle folds
+*** TURN *** [6d 3d 6c][7h]
+SCUMPI checks
+frappedemule checks
+*** RIVER *** [6d 3d 6c 7h][2h]
+SCUMPI checks
+frappedemule checks
+*** SHOW DOWN ***
+frappedemule shows [Jh 9d] (One pair : 6)
+SCUMPI shows [Jd 2d] (Two pairs : 6 and 2)
+SCUMPI collected 0.17€ from pot
+*** SUMMARY ***
+Total pot 0.17€ | Rake 0.01€
+Board: [6d 3d 6c 7h 2h]
+Seat 4: frappedemule showed [Jh 9d] and lost with One pair : 6
+Seat 7: SCUMPI (small blind) showed [Jd 2d] and won 0.17€ with Two pairs : 6 and 2
+
+
+Winamax Poker - CashGame - HandId: #5511456-661-1387318851 - Holdem no limit (0.01€/0.02€) - 2013/12/17 22:20:51 UTC
+Table: 'Tokyo 02' 9-max (real money) Seat #7 is the button
+Seat 2: Mikrethor (1.98€)
+Seat 3: fab3523 (2.16€)
+Seat 4: frappedemule (1.35€)
+Seat 5: indoaffaire3 (1.02€)
+Seat 6: Warou (1.99€)
+Seat 7: SCUMPI (2.54€)
+Seat 8: mamiejoelle (2€)
+Seat 9: Bystyc (2.01€)
+*** ANTE/BLINDS ***
+mamiejoelle posts small blind 0.01€
+Bystyc posts big blind 0.02€
+Dealt to Mikrethor [7c 9c]
+*** PRE-FLOP ***
+Mikrethor folds
+fab3523 folds
+frappedemule raises 0.08€ to 0.10€
+indoaffaire3 folds
+Warou folds
+SCUMPI folds
+mamiejoelle folds
+Bystyc folds
+frappedemule collected 0.13€ from pot
+*** SUMMARY ***
+Total pot 0.13€ | No rake
+Seat 4: frappedemule won 0.13€
+
+
+Winamax Poker - CashGame - HandId: #5511456-662-1387318884 - Holdem no limit (0.01€/0.02€) - 2013/12/17 22:21:24 UTC
+Table: 'Tokyo 02' 9-max (real money) Seat #8 is the button
+Seat 2: Mikrethor (1.98€)
+Seat 3: fab3523 (2.16€)
+Seat 4: frappedemule (1.38€)
+Seat 5: indoaffaire3 (1.02€)
+Seat 6: Warou (1.99€)
+Seat 7: SCUMPI (2.54€)
+Seat 8: mamiejoelle (1.99€)
+Seat 9: Bystyc (1.99€)
+*** ANTE/BLINDS ***
+Bystyc posts small blind 0.01€
+Mikrethor posts big blind 0.02€
+Dealt to Mikrethor [4h 5c]
+*** PRE-FLOP ***
+fab3523 folds
+frappedemule folds
+indoaffaire3 folds
+Warou folds
+SCUMPI folds
+mamiejoelle folds
+Bystyc calls 0.01€
+Mikrethor checks
+*** FLOP *** [8d 2h Ad]
+Bystyc bets 0.02€
+Mikrethor calls 0.02€
+*** TURN *** [8d 2h Ad][Ah]
+Bystyc bets 0.04€
+Mikrethor raises 0.06€ to 0.10€
+Bystyc folds
+Mikrethor collected 0.21€ from pot
+*** SUMMARY ***
+Total pot 0.21€ | Rake 0.01€
+Board: [8d 2h Ad Ah]
+Seat 2: Mikrethor (big blind) won 0.21€
+
+
+Winamax Poker - CashGame - HandId: #5511456-663-1387318997 - Holdem no limit (0.01€/0.02€) - 2013/12/17 22:23:17 UTC
+Table: 'Tokyo 02' 9-max (real money) Seat #9 is the button
+Seat 1: Faabino (2€)
+Seat 2: Mikrethor (2.05€)
+Seat 3: fab3523 (2.16€)
+Seat 4: frappedemule (1.38€)
+Seat 5: indoaffaire3 (1.02€)
+Seat 6: Warou (1.99€)
+Seat 7: SCUMPI (2.54€)
+Seat 8: mamiejoelle (1.99€)
+Seat 9: Bystyc (1.91€)
+*** ANTE/BLINDS ***
+Mikrethor posts small blind 0.01€
+fab3523 posts big blind 0.02€
+Dealt to Mikrethor [9s 7s]
+*** PRE-FLOP ***
+frappedemule folds
+indoaffaire3 folds
+Warou folds
+SCUMPI folds
+mamiejoelle folds
+Bystyc raises 0.03€ to 0.05€
+Mikrethor folds
+fab3523 folds
+Bystyc collected 0.08€ from pot
+*** SUMMARY ***
+Total pot 0.08€ | No rake
+Seat 9: Bystyc (button) won 0.08€
+
+
+Winamax Poker - CashGame - HandId: #5511456-664-1387319065 - Holdem no limit (0.01€/0.02€) - 2013/12/17 22:24:25 UTC
+Table: 'Tokyo 02' 9-max (real money) Seat #2 is the button
+Seat 1: Faabino (2€)
+Seat 2: Mikrethor (2.04€)
+Seat 3: fab3523 (2.14€)
+Seat 4: frappedemule (1.38€)
+Seat 5: indoaffaire3 (1.02€)
+Seat 6: Warou (1.99€)
+Seat 7: SCUMPI (2.54€)
+Seat 8: mamiejoelle (1.99€)
+Seat 9: Bystyc (1.94€)
+*** ANTE/BLINDS ***
+fab3523 posts small blind 0.01€
+frappedemule posts big blind 0.02€
+Faabino posts big blind 0.02€ out of position
+Dealt to Mikrethor [4s Qh]
+*** PRE-FLOP ***
+indoaffaire3 folds
+Warou folds
+SCUMPI folds
+mamiejoelle folds
+Bystyc calls 0.02€
+Faabino checks
+Mikrethor folds
+fab3523 calls 0.01€
+frappedemule raises 1.36€ to 1.38€ and is all-in
+Bystyc folds
+Faabino folds
+fab3523 folds
+frappedemule collected 1.44€ from pot
+*** SUMMARY ***
+Total pot 1.44€ | No rake
+Seat 4: frappedemule (big blind) won 1.44€
+
+
+Winamax Poker - CashGame - HandId: #5511456-665-1387319130 - Holdem no limit (0.01€/0.02€) - 2013/12/17 22:25:30 UTC
+Table: 'Tokyo 02' 9-max (real money) Seat #3 is the button
+Seat 1: Faabino (1.98€)
+Seat 2: Mikrethor (2.04€)
+Seat 3: fab3523 (2.12€)
+Seat 4: frappedemule (1.44€)
+Seat 5: indoaffaire3 (1.02€)
+Seat 6: Warou (1.99€)
+Seat 7: SCUMPI (2.54€)
+Seat 8: mamiejoelle (1.99€)
+Seat 9: Bystyc (1.92€)
+*** ANTE/BLINDS ***
+indoaffaire3 denies big blind
+frappedemule posts small blind 0.01€
+Warou posts big blind 0.02€
+Dealt to Mikrethor [3h 5d]
+*** PRE-FLOP ***
+SCUMPI folds
+mamiejoelle folds
+Bystyc folds
+Faabino folds
+Mikrethor folds
+fab3523 folds
+frappedemule calls 0.01€
+Warou checks
+*** FLOP *** [3d 9d Tc]
+frappedemule bets 0.04€
+Warou folds
+frappedemule collected 0.08€ from pot
+*** SUMMARY ***
+Total pot 0.08€ | No rake
+Board: [3d 9d Tc]
+Seat 4: frappedemule (small blind) won 0.08€
+
+
+Winamax Poker - CashGame - HandId: #5511456-666-1387319235 - Holdem no limit (0.01€/0.02€) - 2013/12/17 22:27:15 UTC
+Table: 'Tokyo 02' 9-max (real money) Seat #4 is the button
+Seat 1: Faabino (1.98€)
+Seat 2: Mikrethor (2.04€)
+Seat 3: fab3523 (2.12€)
+Seat 4: frappedemule (1.46€)
+Seat 5: Winnie 73 (2€)
+Seat 6: Warou (2€)
+Seat 7: SCUMPI (2.54€)
+Seat 8: mamiejoelle (1.99€)
+Seat 9: Bystyc (1.92€)
+*** ANTE/BLINDS ***
+Warou posts small blind 0.01€
+SCUMPI posts big blind 0.02€
+Dealt to Mikrethor [3h 8s]
+*** PRE-FLOP ***
+mamiejoelle folds
+Bystyc folds
+Faabino calls 0.02€
+Mikrethor folds
+fab3523 folds
+Warou folds
+SCUMPI raises 0.04€ to 0.06€
+Faabino calls 0.04€
+*** FLOP *** [8d 3s 9d]
+SCUMPI bets 0.10€
+Faabino folds
+SCUMPI collected 0.22€ from pot
+*** SUMMARY ***
+Total pot 0.22€ | Rake 0.01€
+Board: [8d 3s 9d]
+Seat 7: SCUMPI (big blind) won 0.22€
+
+
+Winamax Poker - CashGame - HandId: #5511456-667-1387319331 - Holdem no limit (0.01€/0.02€) - 2013/12/17 22:28:51 UTC
+Table: 'Tokyo 02' 9-max (real money) Seat #6 is the button
+Seat 1: Faabino (1.92€)
+Seat 2: Mikrethor (2.04€)
+Seat 3: fab3523 (2.12€)
+Seat 4: Clyde-16 (2€)
+Seat 5: Winnie 73 (2€)
+Seat 6: Warou (1.99€)
+Seat 7: SCUMPI (2.60€)
+Seat 8: mamiejoelle (1.99€)
+Seat 9: Bystyc (1.92€)
+*** ANTE/BLINDS ***
+SCUMPI posts small blind 0.01€
+mamiejoelle posts big blind 0.02€
+Clyde-16 posts big blind 0.02€ out of position
+Winnie 73 posts big blind 0.02€ out of position
+Dealt to Mikrethor [Ah Ac]
+*** PRE-FLOP ***
+Bystyc folds
+Faabino folds
+Mikrethor raises 0.08€ to 0.10€
+fab3523 folds
+Clyde-16 folds
+Winnie 73 folds
+Warou folds
+SCUMPI folds
+mamiejoelle folds
+Mikrethor collected 0.17€ from pot
+*** SUMMARY ***
+Total pot 0.17€ | No rake
+Seat 2: Mikrethor won 0.17€
+
+
+Winamax Poker - CashGame - HandId: #5511456-668-1387319396 - Holdem no limit (0.01€/0.02€) - 2013/12/17 22:29:56 UTC
+Table: 'Tokyo 02' 9-max (real money) Seat #7 is the button
+Seat 1: Faabino (1.92€)
+Seat 2: Mikrethor (2.11€)
+Seat 3: fab3523 (2.12€)
+Seat 4: Clyde-16 (1.98€)
+Seat 5: Winnie 73 (1.98€)
+Seat 6: Warou (1.99€)
+Seat 7: SCUMPI (2.59€)
+Seat 8: mamiejoelle (2€)
+Seat 9: Bystyc (1.92€)
+*** ANTE/BLINDS ***
+mamiejoelle posts small blind 0.01€
+Bystyc posts big blind 0.02€
+Dealt to Mikrethor [3h 9s]
+*** PRE-FLOP ***
+Faabino folds
+Mikrethor folds
+fab3523 raises 0.05€ to 0.07€
+Clyde-16 folds
+Winnie 73 calls 0.07€
+Warou folds
+SCUMPI folds
+mamiejoelle calls 0.06€
+Bystyc calls 0.05€
+*** FLOP *** [2d 6d 7h]
+mamiejoelle checks
+Bystyc bets 0.15€
+fab3523 folds
+Winnie 73 calls 0.15€
+mamiejoelle folds
+*** TURN *** [2d 6d 7h][Ks]
+Bystyc bets 0.29€
+Winnie 73 folds
+Bystyc collected 0.83€ from pot
+*** SUMMARY ***
+Total pot 0.83€ | Rake 0.04€
+Board: [2d 6d 7h Ks]
+Seat 9: Bystyc (big blind) won 0.83€
+
+

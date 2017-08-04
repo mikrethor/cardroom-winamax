@@ -2,21 +2,22 @@ package org.ablx.cardroom.parser
 
 import org.ablx.cardroom.commons.data.Cardroom
 import org.ablx.cardroom.commons.data.Player
-import org.ablx.cardroom.commons.enumeration.*
 import org.ablx.cardroom.commons.enumeration.Currency
+import org.ablx.cardroom.commons.enumeration.Domain
+import org.ablx.cardroom.commons.enumeration.GameType
+import org.ablx.cardroom.commons.enumeration.Operator
 import org.junit.Test
 import java.io.File
 import java.util.*
 import kotlin.test.assertEquals
 import kotlin.test.assertFalse
 import kotlin.test.assertTrue
-import kotlin.test.asserter
 
 
-class WinamaxParserTest {
+open class WinamaxParserTest {
 
 
-    private fun createParser(): Parser {
+    open fun createParser(): Parser {
         val cardroom = Cardroom(1, Operator.WINAMAX, Domain.FR, "")
 
         val classLoader = javaClass.classLoader
@@ -39,7 +40,7 @@ class WinamaxParserTest {
     }
 
     @Test
-    fun testRealBuyIn() {
+    open fun testRealBuyIn() {
         val parser: Parser = createParser()
         parser.setCurrency(Currency.EURO)
         val result: Double = parser.parseBuyIn("Winamax Poker - Tournament \"Super Freeroll Stade 2\" buyIn: 0.45€ + 0.05€ level: 0 - HandId: #236883548206792705-2-1377708866 - Holdem no limit (10/20) - 2013/08/28 16:54:26 UTC")
@@ -225,7 +226,7 @@ class WinamaxParserTest {
     }
 
     @Test
-    fun testTableId() {
+    open fun testTableId() {
         val parser: Parser = createParser()
         assertEquals("0", parser.parseTableId("Table: 'Super Freeroll Stade 2(55153749)#0' 6-max (real money) Seat #5 is the button"))
     }
@@ -254,7 +255,7 @@ class WinamaxParserTest {
 
 
     @Test
-    fun testTextToHand() {
+    open fun testTextToHand() {
         val parser: Parser = createParser()
         val handText = "Winamax Poker - Tournament \"Super Freeroll Stade 2\" buyIn: Ticket only level: 0 - HandId: #236883548206792705-1-1377708812 - Holdem no limit (10/20) - 2013/08/28 16:53:32 UTC\n" +
                 "Table: 'Super Freeroll Stade 2(55153749)#0' 6-max (real money) Seat #6 is the button\n" +

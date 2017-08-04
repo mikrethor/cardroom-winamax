@@ -15,7 +15,7 @@ import java.util.*
 import kotlin.collections.HashMap
 
 
-class WinamaxParser(override val cardroom: Cardroom, override val filePath: String) : Parser, CardroomParser() {
+open class WinamaxParser(override val cardroom: Cardroom, override val filePath: String) : Parser, CardroomParser() {
 
 
     override var operator: Operator = Operator.WINAMAX

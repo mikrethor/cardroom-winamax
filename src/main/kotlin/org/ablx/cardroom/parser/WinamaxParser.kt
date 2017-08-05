@@ -17,7 +17,6 @@ import kotlin.collections.HashMap
 
 open class WinamaxParser(override val cardroom: Cardroom, override val filePath: String) : Parser, CardroomParser() {
 
-
     override var operator: Operator = Operator.WINAMAX
     protected val ANTE_BLIND = "*** ANTE/BLINDS ***"
     protected val PRE_FLOP = "*** PRE-FLOP ***"
@@ -79,8 +78,8 @@ open class WinamaxParser(override val cardroom: Cardroom, override val filePath:
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 
-    override fun isUselesLine(line: String): Boolean? {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    override fun isUselessLine(line: String): Boolean {
+        return false
     }
 
 
@@ -598,5 +597,9 @@ open class WinamaxParser(override val cardroom: Cardroom, override val filePath:
                 || Action.RAISES.action == parsedAction || Action.CHECKS.action == parsedAction
                 || Action.COLLECTED.action == parsedAction || Action.BETS.action == parsedAction
                 || Action.SHOWS.action == parsedAction
+    }
+
+    override fun getNextUseFulLine(iterator: Iterator<String>): String {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 }

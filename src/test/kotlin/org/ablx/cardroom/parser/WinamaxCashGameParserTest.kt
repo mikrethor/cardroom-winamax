@@ -1,17 +1,12 @@
 package org.ablx.cardroom.parser
 
 import org.ablx.cardroom.commons.data.Cardroom
-import org.ablx.cardroom.commons.data.Player
 import org.ablx.cardroom.commons.enumeration.Currency
 import org.ablx.cardroom.commons.enumeration.Domain
-import org.ablx.cardroom.commons.enumeration.GameType
 import org.ablx.cardroom.commons.enumeration.Operator
 import org.junit.Test
 import java.io.File
-import java.util.*
 import kotlin.test.assertEquals
-import kotlin.test.assertFalse
-import kotlin.test.assertTrue
 
 
 class WinamaxCashGameParserTest : WinamaxParserTest() {

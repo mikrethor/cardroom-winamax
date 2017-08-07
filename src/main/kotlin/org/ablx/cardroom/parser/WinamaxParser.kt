@@ -50,16 +50,13 @@ open class WinamaxParser(override val cardroom: Cardroom, override val filePath:
 
     override fun fileToMap(): Map<String, String> {
 
-        var map = HashMap<String, String>()
+        val map = HashMap<String, String>()
         val parts = readHandFile().split(NEW_HAND)
 
-        var index = 0
-        for (s in parts) {
-            index++
-            if (s != "") {
-                map.put(parseHandId(s), NEW_HAND + s)
-            }
-        }
+        parts
+                .asSequence()
+                .filter { it != "" }
+                .forEach { map.put(parseHandId(it), NEW_HAND + it) }
 
         return map
     }
@@ -318,8 +315,8 @@ open class WinamaxParser(override val cardroom: Cardroom, override val filePath:
             if (isAction(tab[i])) {
                 playerName = ""
                 action = tab[i]
-                if (Action.CALLS.action.equals(tab[i]) || Action.RAISES.action.equals(tab[i])
-                        || Action.COLLECTED.action.equals(tab[i]) || Action.BETS.action.equals(tab[i])) {
+                if (Action.CALLS.action == tab[i] || Action.RAISES.action == tab[i]
+                        || Action.COLLECTED.action == tab[i] || Action.BETS.action == tab[i]) {
                     amount = tab[i + 1]
                     amount = amount.replace(money.symbol, EMPTY)
                 }
@@ -333,7 +330,7 @@ open class WinamaxParser(override val cardroom: Cardroom, override val filePath:
                     playerName = playerName + between + tab[j]
 
                 }
-                if (Action.SHOWS.value.equals(tab[i])) {
+                if (Action.SHOWS.action == tab[i]) {
                     playerCards = readCards(line)
 
                 }
@@ -408,7 +405,7 @@ open class WinamaxParser(override val cardroom: Cardroom, override val filePath:
                 nextL = iterator.next()
                 if (nextL.startsWith(DEALT)) {
                     val nameAccountPlayer = parsePlayerAccount(nextL)
-                    val playerDealt = hand.players.get(hand.playersSeatByName.get(nameAccountPlayer))
+                    val playerDealt = hand.players[hand.playersSeatByName[nameAccountPlayer]]
 
                     if (playerDealt != null) {
                         playerDealt.cards = this.readCards(nextL)
@@ -424,18 +421,18 @@ open class WinamaxParser(override val cardroom: Cardroom, override val filePath:
 
 
                     // cas ou le joueur ne paie pas la big blind
-                    if (DENIES.equals(blind)) {
+                    if (DENIES == blind) {
                         continue
                     }
                     val joueur: String
-                    if (POSTS.equals(blind)) {
+                    if (POSTS == blind) {
                         joueur = tab[0]
                     } else {
                         joueur = this.getPlayerBlind(tab)
                         if (SMALL == blind) {
-                            hand.smallBlindPlayer = hand.players.get(hand.playersSeatByName.get(joueur))
+                            hand.smallBlindPlayer = hand.players[hand.playersSeatByName[joueur]]
                         } else {
-                            hand.bigBlindPlayer = hand.players.get(hand.playersSeatByName.get(joueur))
+                            hand.bigBlindPlayer = hand.players[hand.playersSeatByName[joueur]]
                         }
                     }
                 }
@@ -470,7 +467,7 @@ open class WinamaxParser(override val cardroom: Cardroom, override val filePath:
                  * @TODO mieux gerer le cas ou le button a ete eliminer au tour
                  * *       d'avant.
                  */
-                if (hand.buttonSeat.equals(playerInGame.seat)) {
+                if (hand.buttonSeat == playerInGame.seat) {
 
                     hand.dealerPlayer = playerInGame
                 }
@@ -519,9 +516,9 @@ open class WinamaxParser(override val cardroom: Cardroom, override val filePath:
                         else -> round = null
                     }
                     action.round = round
-                    if (actions != null) {
-                        actions.add(action)
-                    }
+
+                    actions?.add(action)
+
 
                 }
             }

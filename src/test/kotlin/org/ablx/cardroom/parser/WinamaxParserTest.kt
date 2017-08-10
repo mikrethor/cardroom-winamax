@@ -232,7 +232,7 @@ open class WinamaxParserTest {
     }
 
     @Test
-    fun testParse() {
+    open fun testParse() {
         val parser: Parser = createParser()
         val hands = parser.parse()
         assertEquals(11, hands.values.size)

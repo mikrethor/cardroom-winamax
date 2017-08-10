@@ -16,7 +16,7 @@ class WinamaxCashGameParserTest : WinamaxParserTest() {
         val cardroom = Cardroom(1, Operator.WINAMAX, Domain.FR, "")
 
         val classLoader = javaClass.classLoader
-        val file = File(classLoader.getResource("HandTournamentTestFile.txt")!!.file)
+        val file = File(classLoader.getResource("HandCashGameTestFile.txt")!!.file)
 
         val parser: Parser = WinamaxCashGameParser(cardroom, file.absolutePath)
         parser.setCurrency(Currency.EURO)
@@ -85,5 +85,11 @@ class WinamaxCashGameParserTest : WinamaxParserTest() {
         assertEquals("Tokyo 02", parser.parseTableId("Table: 'Tokyo 02' 9-max (real money) Seat #3 is the button"))
     }
 
+    @Test
+    override fun testParse() {
+        val parser: Parser = createParser()
+        val hands = parser.parse()
+        assertEquals(12, hands.values.size)
+    }
 
 }

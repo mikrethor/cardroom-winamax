@@ -104,7 +104,6 @@ class WinamaxCashGameParser(override val cardroom: Cardroom, override val filePa
         }
         smallBlind = blinds.substring(startPosition, endPosition)
 
-
         smallBlind = removeCharacter(smallBlind, money.symbol)
         return java.lang.Double.parseDouble(smallBlind)
 
@@ -117,13 +116,12 @@ class WinamaxCashGameParser(override val cardroom: Cardroom, override val filePa
         return chaine
     }
 
-    override fun parseBigBlind(chaine: String): Double {
-        var startPosition = chaine.indexOf(LEFT_PARENTHESIS) + 1
-        var endPosition = chaine.indexOf(RIGHT_PARENTHESIS)
-        val blinds = chaine.substring(startPosition, endPosition)
-        var bigBlind = chaine.substring(chaine.indexOf(SLASH) + 1,
-                chaine.indexOf(RIGHT_PARENTHESIS))
-
+    override fun parseBigBlind(line: String): Double {
+        var startPosition = line.indexOf(LEFT_PARENTHESIS) + 1
+        var endPosition = line.indexOf(RIGHT_PARENTHESIS)
+        val blinds = line.substring(startPosition, endPosition)
+        var bigBlind = line.substring(line.indexOf(SLASH) + 1,
+                line.indexOf(RIGHT_PARENTHESIS))
 
         if (blinds.indexOf(SLASH) != blinds.lastIndexOf(SLASH)) {
             startPosition = blinds.lastIndexOf(SLASH) + 1
@@ -136,9 +134,7 @@ class WinamaxCashGameParser(override val cardroom: Cardroom, override val filePa
         bigBlind = blinds.substring(startPosition, endPosition)
         bigBlind = removeCharacter(bigBlind, money.symbol)
 
-
-
-        return java.lang.Double.parseDouble(bigBlind)
+        return bigBlind.toDouble()
     }
 
     override fun parseTableId(chaine: String): String {
@@ -146,6 +142,4 @@ class WinamaxCashGameParser(override val cardroom: Cardroom, override val filePa
         val endPosition = chaine.lastIndexOf(APOSTROPHE)
         return chaine.substring(startPosition, endPosition)
     }
-
-
 }

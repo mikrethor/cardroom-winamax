@@ -31,11 +31,11 @@ class WinamaxCashGameParser(override val cardroom: Cardroom, override val filePa
             hand.actions = ArrayList<HandAction>()
             //TODO put in the right phase
 
-            hand.preflopActions = ArrayList<HandAction>()
-            hand.flopActions = ArrayList<HandAction>()
-            hand.turnActions = ArrayList<HandAction>()
-            hand.riverActions = ArrayList<HandAction>()
-            hand.showdownActions = ArrayList<HandAction>()
+//            hand.preflopActions = ArrayList<HandAction>()
+//            hand.flopActions = ArrayList<HandAction>()
+//            hand.turnActions = ArrayList<HandAction>()
+//            hand.riverActions = ArrayList<HandAction>()
+//            hand.showdownActions = ArrayList<HandAction>()
             hand.players = HashMap<Int, Player>()
 
             hand.bigBlind = bigBlind

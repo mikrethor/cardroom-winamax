@@ -59,10 +59,10 @@ open class WinamaxParser(override val cardroom: Cardroom, override val filePath:
     }
 
     override fun getGameTypeFromFilename(fileName: String): GameType {
-        if (fileName.contains(LEFT_PARENTHESIS) && fileName.contains(RIGHT_PARENTHESIS)) {
-            return GameType.TOURNAMENT
+        return if (fileName.contains(LEFT_PARENTHESIS) && fileName.contains(RIGHT_PARENTHESIS)) {
+            GameType.TOURNAMENT
         } else {
-            return GameType.CASH
+            GameType.CASH
         }
     }
 
@@ -313,7 +313,7 @@ open class WinamaxParser(override val cardroom: Cardroom, override val filePath:
 
 
     override fun textToHand(text: String): Hand {
-        var currentLine: String = ""
+        var currentLine = ""
         var firstIteration = true
         val iterator = text.lines().asIterable().iterator()
         var hand = Hand("1")

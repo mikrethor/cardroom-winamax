@@ -5,6 +5,8 @@ import org.ablx.cardroom.commons.data.Hand
 import org.ablx.cardroom.commons.data.HandAction
 import org.ablx.cardroom.commons.data.Player
 import java.util.ArrayList
+import kotlin.collections.HashMap
+import kotlin.collections.Iterator
 
 
 class WinamaxCashGameParser(override val cardroom: Cardroom, override val filePath: String) : Parser, WinamaxParser(cardroom, filePath) {
@@ -80,13 +82,12 @@ class WinamaxCashGameParser(override val cardroom: Cardroom, override val filePa
         return nextLine
     }
 
-    override fun parseBuyIn(line: String): Double {
-        return 0.0
-    }
+    //No buyin in cashgame
+    override fun parseBuyIn(line: String): Double = 0.0
 
-    override fun parseFee(line: String): Double {
-        return 0.0
-    }
+    //No fee in cashgame
+    override fun parseFee(line: String): Double = 0.0
+
 
     override fun parseSmallBlind(line: String): Double {
         var startPosition = line.indexOf(LEFT_PARENTHESIS) + 1
@@ -107,12 +108,13 @@ class WinamaxCashGameParser(override val cardroom: Cardroom, override val filePa
 
     }
 
-    private fun removeCharacter(line: String, caractere: String): String {
-        if (line.contains(caractere)) {
-            return line.replace(caractere, EMPTY)
-        }
-        return line
-    }
+    private fun removeCharacter(line: String, caractere: String): String =
+            when (line.contains(caractere)) {
+                true -> line.replace(caractere, EMPTY)
+                false -> line
+            }
+
+
 
     override fun parseBigBlind(line: String): Double {
         var startPosition = line.indexOf(LEFT_PARENTHESIS) + 1

@@ -58,22 +58,17 @@ open class WinamaxParser(override val cardroom: Cardroom, override val filePath:
         return map
     }
 
-    override fun getGameTypeFromFilename(fileName: String): GameType {
-        return if (fileName.contains(LEFT_PARENTHESIS) && fileName.contains(RIGHT_PARENTHESIS)) {
-            GameType.TOURNAMENT
-        } else {
-            GameType.CASH
-        }
-    }
+    override fun getGameTypeFromFilename(fileName: String): GameType =
+            when (fileName.contains(LEFT_PARENTHESIS) && fileName.contains(RIGHT_PARENTHESIS)) {
+                true -> GameType.TOURNAMENT
+                false ->    GameType.CASH
+            }
 
     override fun isHandFile(filePath: String): Boolean {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 
-    override fun isUselessLine(line: String): Boolean {
-        return false
-    }
-
+    override fun isUselessLine(line: String): Boolean = false
 
     override fun parse(): MutableMap<String, Hand> {
         val mapHands: MutableMap<String, Hand> = HashMap()
@@ -129,11 +124,8 @@ open class WinamaxParser(override val cardroom: Cardroom, override val filePath:
         return 0.0
     }
 
-    override fun parseCurrency(line: String): org.ablx.cardroom.commons.enumeration.Currency {
-        //The Winamax currency is only euro
-        return Currency.EURO
-    }
-
+    //The Winamax currency is only euro
+    override fun parseCurrency(line: String): org.ablx.cardroom.commons.enumeration.Currency = Currency.EURO
 
     override fun parseFee(line: String): Double {
         val tab = line.split(" - ".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray()
@@ -231,10 +223,9 @@ open class WinamaxParser(override val cardroom: Cardroom, override val filePath:
         return player
     }
 
-    override fun parseRake(line: String): Double {
-        //No rake because not cashgame
-        return 0.0
-    }
+    //No rake because not cashgame
+    override fun parseRake(line: String): Double = 0.0
+
 
 
     override fun parseSmallBlind(line: String): Double {
@@ -294,11 +285,10 @@ open class WinamaxParser(override val cardroom: Cardroom, override val filePath:
                     amount = amount.replace(money.symbol, EMPTY)
                 }
 
-                for (j in 0..index - 1) {
-                    if (j == 0) {
-                        between = ""
-                    } else {
-                        between = SPACE
+                for (j in 0 until index - 1) {
+                    between=when (j == 0) {
+                        true ->  ""
+                        false ->SPACE
                     }
                     playerName = playerName + between + tab[j]
                 }
@@ -412,7 +402,7 @@ open class WinamaxParser(override val cardroom: Cardroom, override val filePath:
     }
 
     override fun parseSeatLine(currentLine: String, iterator: Iterator<String>, phase: String, nextPhases: Array<String>, hand: Hand): String {
-        hand.playersSeatByName = HashMap<kotlin.String, kotlin.Int>()
+        hand.playersSeatByName = HashMap()
 
         var nextL = currentLine
         if (nextL.startsWith(phase)) {
@@ -464,18 +454,14 @@ open class WinamaxParser(override val cardroom: Cardroom, override val filePath:
                     // Ajout des actions ela phase dans le HanDTO
                     val action = this.readAction(curL,
                             hand.playersByName)
-
-                    var round: Round?
-
-                    when (phase) {
-                        PRE_FLOP -> round = Round.PRE_FLOP
-                        FLOP -> round = Round.FLOP
-                        TURN -> round = Round.TURN
-                        RIVER -> round = Round.RIVER
-                        SHOW_DOWN -> round = Round.SHOWDOWN
-                        else -> round = null
+                    action.round =   when (phase) {
+                        PRE_FLOP -> Round.PRE_FLOP
+                        FLOP -> Round.FLOP
+                        TURN -> Round.TURN
+                        RIVER -> Round.RIVER
+                        SHOW_DOWN -> Round.SHOWDOWN
+                        else -> error("Error parsing phase $phase")
                     }
-                    action.round = round
                     actions?.add(action)
                 }
             }
@@ -487,30 +473,30 @@ open class WinamaxParser(override val cardroom: Cardroom, override val filePath:
 
 
     override fun readPreflop(currentLine: String, iterator: Iterator<String>, hand: Hand): String {
-        hand.actions = ArrayList<HandAction>()
-        hand.preflopActions = ArrayList<HandAction>()
+        hand.actions = ArrayList()
+        hand.preflopActions = ArrayList()
         return readActionsByPhase(currentLine, iterator, hand, PRE_FLOP, arrayOf(FLOP, SUMMARY),
                 hand.preflopActions)
     }
 
     override fun readFlop(currentLine: String, iterator: Iterator<String>, hand: Hand): String {
-        hand.flopActions = ArrayList<HandAction>()
+        hand.flopActions = ArrayList()
         return readActionsByPhase(currentLine, iterator, hand, FLOP, arrayOf(TURN, SUMMARY), hand.flopActions)
     }
 
     override fun readTurn(currentLine: String, iterator: Iterator<String>, hand: Hand): String {
-        hand.turnActions = ArrayList<HandAction>()
+        hand.turnActions = ArrayList()
         return readActionsByPhase(currentLine, iterator, hand, TURN, arrayOf(RIVER, SUMMARY), hand.turnActions)
     }
 
     override fun readRiver(currentLine: String, iterator: Iterator<String>, hand: Hand): String {
-        hand.riverActions = ArrayList<HandAction>()
+        hand.riverActions = ArrayList()
         return readActionsByPhase(currentLine, iterator, hand, RIVER, arrayOf(SHOW_DOWN, SUMMARY),
                 hand.riverActions)
     }
 
     override fun readShowdown(currentLine: String, iterator: Iterator<String>, hand: Hand): String {
-        hand.showdownActions = ArrayList<HandAction>()
+        hand.showdownActions = ArrayList()
         return readActionsByPhase(currentLine, iterator, hand, SHOW_DOWN, arrayOf(SUMMARY),
                 hand.showdownActions)
     }
@@ -555,7 +541,6 @@ open class WinamaxParser(override val cardroom: Cardroom, override val filePath:
                 Action.COLLECTED.action, Action.BETS.action, Action.SHOWS.action)
     }
 
-    override fun getNextUseFulLine(iterator: Iterator<String>): String {
-        return iterator.next()
-    }
+    override fun getNextUseFulLine(iterator: Iterator<String>): String = iterator.next()
+
 }

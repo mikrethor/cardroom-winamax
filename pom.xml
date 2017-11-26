@@ -13,7 +13,7 @@
     <description>Winamax cardroom implementation</description>
 
     <properties>
-        <kotlin.version>1.1.60</kotlin.version>
+        <kotlin.version>1.1.61</kotlin.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.jar.version>3.0.2</maven.jar.version>
     </properties>

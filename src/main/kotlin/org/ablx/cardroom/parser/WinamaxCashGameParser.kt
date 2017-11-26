@@ -114,8 +114,6 @@ class WinamaxCashGameParser(override val cardroom: Cardroom, override val filePa
                 false -> line
             }
 
-
-
     override fun parseBigBlind(line: String): Double {
         var startPosition = line.indexOf(LEFT_PARENTHESIS) + 1
         var endPosition = line.indexOf(RIGHT_PARENTHESIS)

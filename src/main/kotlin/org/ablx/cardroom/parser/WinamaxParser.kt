@@ -119,7 +119,7 @@ open class WinamaxParser(override val cardroom: Cardroom, override val filePath:
             buyIn = buyIn.substring(startPosition, endPosition)
             buyIn = buyIn.replace(VIRGULE, POINT)
             buyIn = buyIn.replace(money.symbol, EMPTY)
-            return java.lang.Double.parseDouble(buyIn)
+            return buyIn.toDouble()
         }
         return 0.0
     }
@@ -143,7 +143,7 @@ open class WinamaxParser(override val cardroom: Cardroom, override val filePath:
             }
             fee = fee.substring(startPosition, endPosition)
             fee = fee.replace(VIRGULE, POINT)
-            return java.lang.Double.parseDouble(fee)
+            return fee.toDouble()
         }
         return 0.0
     }
@@ -158,10 +158,10 @@ open class WinamaxParser(override val cardroom: Cardroom, override val filePath:
         val startPosition = line.lastIndexOf(DASH) + 2
         val endPosition = line.lastIndexOf(SPACE)
 
-        try {
-            return convertHandDate(line.substring(startPosition, endPosition))
+        return try {
+            convertHandDate(line.substring(startPosition, endPosition))
         } catch (e: ParseException) {
-            return Date()
+            Date()
         }
     }
 
@@ -219,14 +219,12 @@ open class WinamaxParser(override val cardroom: Cardroom, override val filePath:
 
         player.seat = Integer.parseInt(seat)
         player.on = true
-        player.stack = java.lang.Double.parseDouble(stack)
+        player.stack = stack.toDouble()
         return player
     }
 
     //No rake because not cashgame
     override fun parseRake(line: String): Double = 0.0
-
-
 
     override fun parseSmallBlind(line: String): Double {
         var startPosition = line.indexOf(LEFT_PARENTHESIS) + 1
@@ -242,7 +240,6 @@ open class WinamaxParser(override val cardroom: Cardroom, override val filePath:
         }
 
         return blinds.substring(startPosition, endPosition).toDouble()
-
     }
 
     override fun parseTableId(line: String): String {
@@ -259,7 +256,7 @@ open class WinamaxParser(override val cardroom: Cardroom, override val filePath:
         val endPosition = currentLine.indexOf(PIPE) - 1
         currentLine = currentLine.substring(startPosition, endPosition)
         currentLine = currentLine.replace(money.symbol, EMPTY)
-        return java.lang.Double.parseDouble(currentLine)
+        return currentLine.toDouble()
     }
 
     override fun readHandFile(): String {
@@ -298,7 +295,7 @@ open class WinamaxParser(override val cardroom: Cardroom, override val filePath:
             }
         }
 
-        return HandAction(players[playerName], Action.valueOfCode(action), java.lang.Double.parseDouble(amount), playerCards)
+        return HandAction(players[playerName], Action.valueOfCode(action), amount.toDouble(), playerCards)
     }
 
 

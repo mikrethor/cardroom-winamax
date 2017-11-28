@@ -2,11 +2,9 @@ package org.ablx.cardroom.parser
 
 import org.ablx.cardroom.commons.data.Cardroom
 import org.ablx.cardroom.commons.data.Hand
-import org.ablx.cardroom.commons.data.HandAction
 import org.ablx.cardroom.commons.data.Player
 import java.util.ArrayList
 import kotlin.collections.HashMap
-import kotlin.collections.Iterator
 
 
 class WinamaxCashGameParser(override val cardroom: Cardroom, override val filePath: String) : Parser, WinamaxParser(cardroom, filePath) {

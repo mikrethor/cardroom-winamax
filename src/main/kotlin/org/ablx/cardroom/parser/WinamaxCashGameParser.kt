@@ -30,7 +30,7 @@ class WinamaxCashGameParser(override val cardroom: Cardroom, override val filePa
 
             val smallBlind = parseSmallBlind(line)
             val bigBlind = parseBigBlind(line)
-            hand.actions = ArrayList<HandAction>()
+            hand.actions = ArrayList()
             //TODO put in the right phase
 
 //            hand.preflopActions = ArrayList<HandAction>()

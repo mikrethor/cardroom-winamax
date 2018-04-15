@@ -2,8 +2,6 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <url>..</url>
-
-
       
     <groupId>org.ablx.cardroom</groupId>
     <artifactId>cardroom-winamax</artifactId>
@@ -13,9 +11,9 @@
     <description>Winamax cardroom implementation</description>
 
     <properties>
-        <kotlin.version>1.1.61</kotlin.version>
+        <kotlin.version>1.2.31</kotlin.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.jar.version>3.0.2</maven.jar.version>
+        <maven.jar.version>3.1.0</maven.jar.version>
     </properties>
 
     <dependencies>

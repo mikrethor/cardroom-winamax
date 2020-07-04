@@ -6,7 +6,7 @@ import org.ablx.cardroom.commons.enumeration.Currency
 import org.ablx.cardroom.commons.enumeration.Domain
 import org.ablx.cardroom.commons.enumeration.GameType
 import org.ablx.cardroom.commons.enumeration.Operator
-import org.junit.Test
+import org.junit.jupiter.api.Test
 import java.io.File
 import java.util.*
 import kotlin.test.assertEquals

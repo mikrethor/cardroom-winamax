@@ -4,7 +4,7 @@ import org.ablx.cardroom.commons.data.Cardroom
 import org.ablx.cardroom.commons.enumeration.Currency
 import org.ablx.cardroom.commons.enumeration.Domain
 import org.ablx.cardroom.commons.enumeration.Operator
-import org.junit.Test
+import org.junit.jupiter.api.Test
 import java.io.File
 import kotlin.test.assertEquals
 
@@ -91,5 +91,4 @@ class WinamaxCashGameParserTest : WinamaxParserTest() {
         val hands = parser.parse()
         assertEquals(12, hands.values.size)
     }
-
 }
